@@ -18,24 +18,30 @@
             <h1 class="text-center my-5">Calcola il tuo biglietto</h1>
 
             <!-- Form -->
-            <form>
-                <div class="row justify-content-between">
+            <form id="form">
+                <div class="row justify-content-between fw-medium">
                     <div class="col col-12 col-md-5">
                         <label for="km">Inserisci i chilometri da percorrere</label>
-                        <input type="number" class="form-control mb-3" id="">
+                        <input type="number" class="form-control mb-3" id="km">
                     </div>
                     <div class="col col-12 col-md-5">
                         <label for="age">Inserisci la tua età</label>
                         <input type="number" class="form-control mb-3" id="age">
                     </div>
-                    <div class="col mt-md-4">
-                        <button class="btn btn-primary">Calcola</button>
+                    <div class="col col-12 col-md-2 mt-md-4">
+                        <button class="btn btn-primary" id="submit">Calcola</button>
                     </div>
                 </div>
             </form>
-            <!-- End Form -->
+            <!-- End form -->
+
+            <!-- Message -->
+            <div class="container px-4">
+                <p class="fs-5 fw-medium mt-4 d-none" id="message"></p>
+            </div>
+            <!-- End message -->
         </div>
-        <!-- End Container -->
+        <!-- End container -->
     </main>
 
 
